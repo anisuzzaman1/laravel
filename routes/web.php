@@ -29,4 +29,9 @@ Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-require __DIR__.'/auth.php';
+// Creating my First Service and Call here
+Route::get('/test', function () {
+    app()->make('fist_service_provider');
+});
+
+require __DIR__ . '/auth.php';
