@@ -14,20 +14,20 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        // Creating Custom Services
-        app()->bind('fist_service_provider', function ($app) {
-            dd("This is first service container");
-        });
+        // // Creating Custom Services
+        // app()->bind('fist_service_provider', function ($app) {
+        //     dd("This is first service container");
+        // });
 
-        # App::getFacadeApplication()->bind();
+        // # App::getFacadeApplication()->bind();
 
-        app()->bind('Second_service_provider', function ($app) {
-            dd("This is Second service container");
-        });
+        // app()->bind('Second_service_provider', function ($app) {
+        //     dd("This is Second service container");
+        // });
 
-        app()->bind('Third_service_provider', function ($app) {
-            dd("This is Third service container");
-        });
+        // app()->bind('Third_service_provider', function ($app) {
+        //     dd("This is Third service container");
+        // });
     }
 
     /**
