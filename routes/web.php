@@ -34,4 +34,8 @@ Route::get('/test', function () {
     app()->make('fist_service_provider');
 });
 
+Route::get('/calc', function () {
+    RussellCalc::add();
+});
+
 require __DIR__ . '/auth.php';
